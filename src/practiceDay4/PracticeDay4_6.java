@@ -23,10 +23,8 @@ public class PracticeDay4_6 {
         } while (n <= 0);
 
         for (int i = 1; i <= n; i++) {
-            if (n % i == 0 && i % 2 == 1) {
-                if (i > max) {
-                    max = i;
-                }
+            if ((n % i == 0 && i % 2 == 1) && (i > max)) {
+                    max = i;        
             }          
         }
         System.out.println("Uoc so lon nhat cua n: " + max);

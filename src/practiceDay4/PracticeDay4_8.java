@@ -21,13 +21,27 @@ public class PracticeDay4_8 {
             System.out.print("Nhap n: ");
             n = sc.nextInt();
         } while (n < 0);
+//        int temp = n;
+//        while (temp > 0) {
+//            if (temp % 2 == 0) {
+//                sum += (temp % 10);
+//            }
+//            temp /= 10;
+//        }
+        sum = sum(n);
+        System.out.println("Tong cac chu so chan: " + sum);
+    }
+
+    public static int sum(int n) {
+        int sum = 0;
         int temp = n;
         while (temp > 0) {
+
             if (temp % 2 == 0) {
                 sum += (temp % 10);
             }
             temp /= 10;
         }
-        System.out.println("Tong cac chu so chan: " + sum);
+        return sum;
     }
 }
