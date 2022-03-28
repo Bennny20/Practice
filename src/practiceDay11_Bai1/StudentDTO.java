@@ -120,7 +120,7 @@ public class StudentDTO {
 
         int removedIndex = 0;
         for (int i = 0; i < listStudent.length; i++) {
-            if (i == removedIndex) {
+            if (i == index) {
                 continue;
             }
             newList[removedIndex] = listStudent[i];
@@ -128,5 +128,5 @@ public class StudentDTO {
         }
         return newList;
     }
-
+    
 }
